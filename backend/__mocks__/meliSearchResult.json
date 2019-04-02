@@ -1,0 +1,785 @@
+{
+  "site_id": "MLA",
+  "query": "tenis",
+  "paging": {
+    "total": 31952,
+    "offset": 0,
+    "limit": 1,
+    "primary_results": 1000
+  },
+  "results": [
+    {
+      "id": "MLA687321144",
+      "site_id": "MLA",
+      "title": "Zapatillas Wilson Urban - Backhand Urbano - Hombre",
+      "seller": {
+        "id": 221818866,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+        ]
+      },
+      "price": 999,
+      "currency_id": "ARS",
+      "available_quantity": 150,
+      "sold_quantity": 250,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-10-07T19:28:52.000Z",
+      "condition": "new",
+      "permalink": "https://articulo.mercadolibre.com.ar/MLA-687321144-zapatillas-wilson-urban-backhand-urbano-hombre-_JM",
+      "thumbnail": "http://mla-s1-p.mlstatic.com/916633-MLA26164079264_102017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 136.34,
+        "rate": 63.77,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "TUxBQkJBUjM0MDha",
+        "city_name": "Barracas"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [
+          "self_service_in"
+        ],
+        "logistic_type": "cross_docking",
+        "store_pick_up": true
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "TUxBQkJBUjM0MDha",
+          "name": "Barracas"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 1,
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "16031",
+          "value_name": "Wilson",
+          "value_struct": null
+        },
+        {
+          "id": "ITEM_CONDITION",
+          "name": "Condición del ítem",
+          "value_id": "2230284",
+          "value_name": "Nuevo",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros",
+          "source": 1138849081739375
+        },
+        {
+          "source": 1138849081739375,
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "BACKHAND M",
+          "value_struct": null,
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Otros"
+        }
+      ],
+      "original_price": 2099,
+      "category_id": "MLA38024",
+      "official_store_id": 767,
+      "catalog_product_id": null,
+      "reviews": {
+        "rating_average": 4.3,
+        "total": 39
+      },
+      "tags": [
+        "brand_verified",
+        "good_quality_picture",
+        "good_quality_thumbnail",
+        "immediate_payment",
+        "cart_eligible"
+      ]
+    }
+  ],
+  "secondary_results": [
+  ],
+  "related_results": [
+  ],
+  "sort": {
+    "id": "relevance",
+    "name": "More relevant"
+  },
+  "available_sorts": [
+    {
+      "id": "price_asc",
+      "name": "Lower price"
+    },
+    {
+      "id": "price_desc",
+      "name": "Higher price"
+    }
+  ],
+  "filters": [
+    {
+      "id": "category",
+      "name": "Categories",
+      "type": "text",
+      "values": [
+        {
+          "id": "MLA1276",
+          "name": "Deportes y Fitness",
+          "path_from_root": [
+            {
+              "id": "MLA1276",
+              "name": "Deportes y Fitness"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "available_filters": [
+    {
+      "id": "category",
+      "name": "Categories",
+      "type": "text",
+      "values": [
+        {
+          "id": "MLA3724",
+          "name": "Zapatillas",
+          "results": 4819
+        },
+        {
+          "id": "MLA1322",
+          "name": "Tenis, Padel y Squash ",
+          "results": 24908
+        },
+        {
+          "id": "MLA3660",
+          "name": "Libros y Revistas de Deportes",
+          "results": 791
+        },
+        {
+          "id": "MLA4697",
+          "name": "Juegos de Salón",
+          "results": 448
+        },
+        {
+          "id": "MLA417397",
+          "name": "Ropa Deportiva",
+          "results": 210
+        },
+        {
+          "id": "MLA1278",
+          "name": "Natación",
+          "results": 175
+        },
+        {
+          "id": "MLA1285",
+          "name": "Fútbol",
+          "results": 171
+        },
+        {
+          "id": "MLA3732",
+          "name": "Hockey",
+          "results": 133
+        },
+        {
+          "id": "MLA47786",
+          "name": "Montañismo y Trekking",
+          "results": 50
+        },
+        {
+          "id": "MLA1338",
+          "name": "Aerobics y Fitness",
+          "results": 35
+        },
+        {
+          "id": "MLA1333",
+          "name": "Voley",
+          "results": 35
+        },
+        {
+          "id": "MLA1342",
+          "name": "Golf",
+          "results": 28
+        },
+        {
+          "id": "MLA1309",
+          "name": "Básquet",
+          "results": 21
+        },
+        {
+          "id": "MLA37856",
+          "name": "Handball",
+          "results": 14
+        },
+        {
+          "id": "MLA1293",
+          "name": "Patín, Gimnasia y Danza",
+          "results": 14
+        },
+        {
+          "id": "MLA1362",
+          "name": "Camping",
+          "results": 7
+        },
+        {
+          "id": "MLA1277",
+          "name": "Deportes Acuáticos",
+          "results": 7
+        },
+        {
+          "id": "MLA1355",
+          "name": "Deportes Extremos",
+          "results": 7
+        },
+        {
+          "id": "MLA410723",
+          "name": "Monopatines y Scooters",
+          "results": 7
+        },
+        {
+          "id": "MLA3723",
+          "name": "Pulsómetros y Cronómetros",
+          "results": 7
+        },
+        {
+          "id": "MLA3731",
+          "name": "Rugby",
+          "results": 7
+        },
+        {
+          "id": "MLA1297",
+          "name": "Ski y Snowboard",
+          "results": 7
+        },
+        {
+          "id": "MLA18369",
+          "name": "Softball y Beisbol",
+          "results": 7
+        },
+        {
+          "id": "MLA1358",
+          "name": "Otros",
+          "results": 49
+        }
+      ]
+    },
+    {
+      "id": "official_store",
+      "name": "Tiendas oficiales",
+      "type": "text",
+      "values": [
+        {
+          "id": "all",
+          "name": "Todas las tiendas oficiales",
+          "results": 2208
+        },
+        {
+          "id": "767",
+          "name": "Wilson",
+          "results": 248
+        },
+        {
+          "id": "1728",
+          "name": "Ra store",
+          "results": 29
+        },
+        {
+          "id": "273",
+          "name": "Sportline",
+          "results": 80
+        },
+        {
+          "id": "883",
+          "name": "Open Sports",
+          "results": 184
+        },
+        {
+          "id": "964",
+          "name": "adidas Performance",
+          "results": 37
+        },
+        {
+          "id": "1032",
+          "name": "Sport 78",
+          "results": 71
+        },
+        {
+          "id": "812",
+          "name": "Showsport",
+          "results": 64
+        },
+        {
+          "id": "1450",
+          "name": "Nike",
+          "results": 50
+        },
+        {
+          "id": "1534",
+          "name": "Team Sport",
+          "results": 36
+        },
+        {
+          "id": "1390",
+          "name": "GRID",
+          "results": 1
+        },
+        {
+          "id": "699",
+          "name": "Salomon",
+          "results": 1
+        }
+      ]
+    },
+    {
+      "id": "discount",
+      "name": "Discounts",
+      "type": "range",
+      "values": [
+        {
+          "id": "10-100",
+          "name": "From 10% off",
+          "results": 349
+        },
+        {
+          "id": "20-100",
+          "name": "From 20% off",
+          "results": 306
+        },
+        {
+          "id": "40-100",
+          "name": "From 40% off",
+          "results": 17
+        }
+      ]
+    },
+    {
+      "id": "state",
+      "name": "Location",
+      "type": "text",
+      "values": [
+        {
+          "id": "TUxBUENBUGw3M2E1",
+          "name": "Capital Federal",
+          "results": 15483
+        },
+        {
+          "id": "TUxBUEdSQWU4ZDkz",
+          "name": "Bs.As. G.B.A. Norte",
+          "results": 4572
+        },
+        {
+          "id": "TUxBUEdSQXJlMDNm",
+          "name": "Bs.As. G.B.A. Sur",
+          "results": 3211
+        },
+        {
+          "id": "TUxBUEdSQWVmNTVm",
+          "name": "Bs.As. G.B.A. Oeste",
+          "results": 2197
+        },
+        {
+          "id": "TUxBUFpPTmFpbnRl",
+          "name": "Buenos Aires Interior",
+          "results": 1542
+        },
+        {
+          "id": "TUxBUENPUmFkZGIw",
+          "name": "Córdoba",
+          "results": 1524
+        },
+        {
+          "id": "TUxBUFNBTmU5Nzk2",
+          "name": "Santa Fe",
+          "results": 929
+        },
+        {
+          "id": "TUxBUENPU2ExMmFkMw",
+          "name": "Bs.As. Costa Atlántica",
+          "results": 373
+        },
+        {
+          "id": "TUxBUENIQW8xMTNhOA",
+          "name": "Chaco",
+          "results": 239
+        },
+        {
+          "id": "TUxBUE1FTmE5OWQ4",
+          "name": "Mendoza",
+          "results": 210
+        },
+        {
+          "id": "TUxBUEVOVHMzNTdm",
+          "name": "Entre Ríos",
+          "results": 168
+        },
+        {
+          "id": "TUxBUE5FVW4xMzMzNQ",
+          "name": "Neuquén",
+          "results": 154
+        },
+        {
+          "id": "TUxBUE1JU3MzNjIx",
+          "name": "Misiones",
+          "results": 141
+        },
+        {
+          "id": "TUxBUFNBTGFjMTJi",
+          "name": "Salta",
+          "results": 140
+        },
+        {
+          "id": "TUxBUFNBTm5lYjU4",
+          "name": "San Juan",
+          "results": 140
+        },
+        {
+          "id": "TUxBUENPUnM5MjI0",
+          "name": "Corrientes",
+          "results": 120
+        },
+        {
+          "id": "TUxBUFNBTm9lOTlk",
+          "name": "Santiago del Estero",
+          "results": 103
+        },
+        {
+          "id": "TUxBUEZPUmE1OTk5",
+          "name": "Formosa",
+          "results": 92
+        },
+        {
+          "id": "TUxBUENBVGFiY2Fm",
+          "name": "Catamarca",
+          "results": 91
+        },
+        {
+          "id": "TUxBUEpVSnk3YmUz",
+          "name": "Jujuy",
+          "results": 91
+        },
+        {
+          "id": "TUxBUFRVQ244NmM3",
+          "name": "Tucumán",
+          "results": 70
+        },
+        {
+          "id": "TUxBUENIVXQxNDM1MQ",
+          "name": "Chubut",
+          "results": 36
+        },
+        {
+          "id": "TUxBUFLNT29iZmZm",
+          "name": "Río Negro",
+          "results": 35
+        },
+        {
+          "id": "TUxBUExBWmE1OWMy",
+          "name": "La Pampa",
+          "results": 28
+        },
+        {
+          "id": "TUxBUFNBTnM0ZTcz",
+          "name": "San Luis",
+          "results": 21
+        },
+        {
+          "id": "TUxBUFNBTno3ZmY5",
+          "name": "Santa Cruz",
+          "results": 21
+        },
+        {
+          "id": "TUxBUExBWmEyNzY0",
+          "name": "La Rioja",
+          "results": 14
+        },
+        {
+          "id": "TUxBUFRJRVoxM2M5YQ",
+          "name": "Tierra del Fuego",
+          "results": 7
+        }
+      ]
+    },
+    {
+      "id": "price",
+      "name": "Precio",
+      "type": "range",
+      "values": [
+        {
+          "id": "*-1000.0",
+          "name": "Up to $1.000",
+          "results": 10127
+        },
+        {
+          "id": "1000.0-3000.0",
+          "name": "$1.000 to $3.000",
+          "results": 10333
+        },
+        {
+          "id": "3000.0-*",
+          "name": "More than $3.000",
+          "results": 11497
+        }
+      ]
+    },
+    {
+      "id": "accepts_mercadopago",
+      "name": "MercadoPago filter",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "With MercadoPago",
+          "results": 31957
+        }
+      ]
+    },
+    {
+      "id": "installments",
+      "name": "Pago",
+      "type": "text",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Installments",
+          "results": 31950
+        },
+        {
+          "id": "no_interest",
+          "name": "Sin interés",
+          "results": 3372
+        }
+      ]
+    },
+    {
+      "id": "condition",
+      "name": "Condición",
+      "type": "text",
+      "values": [
+        {
+          "id": "new",
+          "name": "New",
+          "results": 25257
+        },
+        {
+          "id": "used",
+          "name": "Used",
+          "results": 6539
+        }
+      ]
+    },
+    {
+      "id": "shipping",
+      "name": "Envío",
+      "type": "text",
+      "values": [
+        {
+          "id": "mercadoenvios",
+          "name": "Mercado Envíos",
+          "results": 28768
+        }
+      ]
+    },
+    {
+      "id": "power_seller",
+      "name": "Seller quality filter",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Best sellers",
+          "results": 13932
+        }
+      ]
+    },
+    {
+      "id": "since",
+      "name": "Auction start date filter",
+      "type": "text",
+      "values": [
+        {
+          "id": "today",
+          "name": "Publicados hoy",
+          "results": 105
+        }
+      ]
+    },
+    {
+      "id": "until",
+      "name": "Auction stop filter",
+      "type": "text",
+      "values": [
+        {
+          "id": "today",
+          "name": "Ending today",
+          "results": 28
+        }
+      ]
+    },
+    {
+      "id": "has_video",
+      "name": "Video publications filter",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Publications with video",
+          "results": 1079
+        }
+      ]
+    },
+    {
+      "id": "has_pictures",
+      "name": "Items with images filter",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "With pictures",
+          "results": 31908
+        }
+      ]
+    },
+    {
+      "id": "product",
+      "name": "Product",
+      "type": "text",
+      "values": [
+        {
+          "id": "MLA10599142",
+          "name": "Penn Premium Tournament Pro",
+          "results": 36
+        },
+        {
+          "id": "MLA9103344",
+          "name": "Babolat Pure Drive Team",
+          "results": 36
+        },
+        {
+          "id": "MLA10585051",
+          "name": "Head ATP",
+          "results": 29
+        },
+        {
+          "id": "MLA9088445",
+          "name": "Babolat Pure Drive",
+          "results": 29
+        },
+        {
+          "id": "MLA10585053",
+          "name": "Head ATP - 3",
+          "results": 22
+        },
+        {
+          "id": "MLA10599137",
+          "name": "Mafer Pro",
+          "results": 22
+        },
+        {
+          "id": "MLA10599141",
+          "name": "Penn Court One",
+          "results": 22
+        },
+        {
+          "id": "MLA6061283",
+          "name": "Wilson BLX Blade 98 Cv",
+          "results": 8
+        },
+        {
+          "id": "MLA9159219",
+          "name": "Head Extreme 145",
+          "results": 8
+        },
+        {
+          "id": "MLA9280334",
+          "name": "Wilson Recreational & Begginer Federer Control 103",
+          "results": 8
+        },
+        {
+          "id": "MLA13578115",
+          "name": "Davor 11.0 Strauss",
+          "results": 1
+        },
+        {
+          "id": "MLA6059009",
+          "name": "Wilson Recreational & Begginer Federer Team 105",
+          "results": 1
+        },
+        {
+          "id": "MLA7989445",
+          "name": "Head Maria 23",
+          "results": 1
+        },
+        {
+          "id": "MLA7989446",
+          "name": "Head Maria 23 - Azul - 16 x 18",
+          "results": 1
+        },
+        {
+          "id": "MLA9159220",
+          "name": "Head Extreme 145 - Negro/Verde - 12 x 17 - 4",
+          "results": 1
+        },
+        {
+          "id": "MLA9293614",
+          "name": "Head Extreme S",
+          "results": 1
+        },
+        {
+          "id": "MLA12834282",
+          "name": "Babolat Pure",
+          "results": 91
+        },
+        {
+          "id": "MLA12834285",
+          "name": "Varlion Summum",
+          "results": 91
+        },
+        {
+          "id": "MLA9965647",
+          "name": "Royal Padel Super Cross",
+          "results": 91
+        },
+        {
+          "id": "MLA10028069",
+          "name": "Royal Padel Tigra",
+          "results": 70
+        }
+      ]
+    },
+    {
+      "id": "shipping_cost",
+      "name": "Costo de envío",
+      "type": "text",
+      "values": [
+        {
+          "id": "free",
+          "name": "Gratis",
+          "results": 16149
+        }
+      ]
+    }
+  ]
+}

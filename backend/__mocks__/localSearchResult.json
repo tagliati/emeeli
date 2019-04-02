@@ -1,0 +1,40 @@
+{
+  "author": { "name": "André", "lastname": "Tagliati" },
+"categories":
+ [ "Zapatillas",
+   "Tenis, Padel y Squash ",
+   "Libros y Revistas de Deportes",
+   "Juegos de Salón",
+   "Ropa Deportiva",
+   "Natación",
+   "Fútbol",
+   "Hockey",
+   "Montañismo y Trekking",
+   "Aerobics y Fitness",
+   "Voley",
+   "Golf",
+   "Básquet",
+   "Handball",
+   "Patín, Gimnasia y Danza",
+   "Camping",
+   "Deportes Acuáticos",
+   "Deportes Extremos",
+   "Monopatines y Scooters",
+   "Pulsómetros y Cronómetros",
+   "Rugby",
+   "Ski y Snowboard",
+   "Softball y Beisbol",
+   "Otros" ],
+"items":
+ [ { "id": "MLA687321144",
+  "location": "Capital Federal",
+     "title": "Zapatillas Wilson Urban - Backhand Urbano - Hombre",
+     "price": {
+      "currency": "$",
+      "amount": 999,
+      "decimals": 2
+     },
+     "picture":
+      "http://mla-s1-p.mlstatic.com/916633-MLA26164079264_102017-A.jpg",
+     "condition": "new",
+     "free_shipping": false } ] }
