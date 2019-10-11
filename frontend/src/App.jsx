@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 
@@ -10,13 +10,15 @@ import NotFound from './pages/NotFound';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Header />
-      <Route path="/" exact component={Home} />
-      <Route path="/search" component={Search} />
-      <Route path="/product/:id" component={Product} />
-      <Route path="/*" component={NotFound} />
-    </Router>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/search" component={Search} />
+        <Route path="/product/:id" component={Product} />
+        <Route path="*" component={NotFound} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
