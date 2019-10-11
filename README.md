@@ -1,6 +1,3 @@
-
-
-
 # Mercado Livre Practical Teste
 
 This project is part of Mercado Livre Practical test and have to cores
@@ -8,8 +5,6 @@ This project is part of Mercado Livre Practical test and have to cores
 - frontend - Client using React builded using Create React App
 
 - backend - Node.js API wich consumes and format Mercado Livre Data and delivery to frontend
-
-
 
 ## How to use
 
@@ -22,20 +17,17 @@ On backend dir run:
 
 After that the API will be running at http://localhost:3001
 On frontend dir run:
+
 > $ npm install
 > $ npm start
 
-
-
 After the npm start you have a server running at http://localhost:3000
-
-
 
 At this point you can access http://localhost:3000 and search for your products
 
 To run the backend tests execute:
-> npm test
 
+> npm test
 
 ## Known Issues and Improvements
 
@@ -46,3 +38,4 @@ To run the backend tests execute:
 - convert loading into component
 - images lazy load
 - product page: last element from breadcrumb should be bold
+- Search result empty page
