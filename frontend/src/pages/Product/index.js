@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import axios from 'axios';
+import api from '../../services/api';
 
 import Wrapper from '../../components/Wrapper';
 import ProductDetail from '../../components/ProductDetail';
 import Breadcrumb from '../../components/Breadcrumb';
+import Loading from '../../components/Loading';
 
-
-const Product = (props) => {
+const Product = props => {
   const [product, setProduct] = useState({});
 
   useEffect(() => {
     const { id } = props.match.params;
 
-    axios
-      .get(`http://localhost:3001/api/items/${id}`)
-      .then((result) => {
+    api
+      .get(`/items/${id}`)
+      .then(result => {
         setProduct(result.data);
       })
       .catch(() => {
@@ -28,14 +28,16 @@ const Product = (props) => {
   }
 
   function renderProductBreadcrumb(productDetail) {
-    const textProduct = productDetail.categories.map((cat => (cat))).join(' > ');
+    const textProduct = productDetail.categories.map(cat => cat).join(' > ');
     return <Breadcrumb categories={textProduct} />;
   }
-  const renderEmpty = () => <div className="loading">Carregando...</div>;
+  const renderEmpty = () => <Loading />;
   return (
     <Wrapper>
-      {Object.keys(product).length ? renderProductBreadcrumb(product) : '' }
-      {Object.keys(product).length ? renderProductDetail(product) : renderEmpty()}
+      {Object.keys(product).length ? renderProductBreadcrumb(product) : ''}
+      {Object.keys(product).length
+        ? renderProductDetail(product)
+        : renderEmpty()}
     </Wrapper>
   );
 };

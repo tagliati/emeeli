@@ -39,3 +39,7 @@ To run the backend tests execute:
 - images lazy load
 - product page: last element from breadcrumb should be bold
 - Search result empty page
+- Add something at Home
+- Add better loading option
+- change then to async away in api calls
+- Middleware on node to add info

@@ -1,8 +1,8 @@
 import React from 'react';
-import './styles.scss';
+import SearchBlock from './styles';
 
 const Search = () => (
-  <form className="search" action="/search">
+  <SearchBlock action="/search">
     <input
       type="text"
       className="input"
@@ -11,7 +11,7 @@ const Search = () => (
       name="search"
     />
     <button type="submit" className="button" />
-  </form>
+  </SearchBlock>
 );
 
 export default Search;

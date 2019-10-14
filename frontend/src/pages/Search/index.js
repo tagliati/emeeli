@@ -1,34 +1,42 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import PropTypes from 'prop-types';
+
+import api from '../../services/api';
 
 import Wrapper from '../../components/Wrapper';
 import Card from '../../components/Card';
 import Breadcrumb from '../../components/Breadcrumb';
+import Loading from '../../components/Loading';
 
-const Search = (props) => {
+import SearchList from './styles';
+
+const Search = props => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
     const search = props.location.search.split('=')[1];
-    axios.get(`http://localhost:3001/api/items?search=${search}`).then((result) => {
+    api.get(`/items?search=${search}`).then(result => {
       setData(result.data);
     });
-  }, []);
+  }, [props.location.search]);
+
   function renderBreadcrumb(categories) {
     if (Object.keys(data).length) return false;
     const textCategories = categories.slice(0, 5).join(', ');
     return <Breadcrumb categories={textCategories} />;
   }
 
-  const renderEmpty = () => <div className="loading">Carregando...</div>;
+  const renderLoading = () => <Loading />;
 
   return (
     <Wrapper>
-      {Object.keys(data).length ? renderBreadcrumb(data.categories) : renderEmpty() }
-      <div className="search-list">
-        {!!Object.keys(data).length && data.items.map(item => (
-          <Card product={item} key={item.id} />))}
-      </div>
+      {Object.keys(data).length
+        ? renderBreadcrumb(data.categories)
+        : renderLoading()}
+      <SearchList>
+        {!!Object.keys(data).length &&
+          data.items.map(item => <Card product={item} key={item.id} />)}
+      </SearchList>
     </Wrapper>
   );
 };

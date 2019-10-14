@@ -1,17 +1,17 @@
 import React from 'react';
-import './styles.scss';
 import Wrapper from '../Wrapper';
 import Search from './Search';
+import HeadBlock from './styles';
 
 const Header = () => (
-  <div className="header">
+  <HeadBlock>
     <Wrapper customClass="header-align">
-      <div className="box-logo">
-        <a href="/" className="logo">Mercado Livre</a>
-      </div>
+      <a href="/" className="logo">
+        Mercado Livre
+      </a>
       <Search />
     </Wrapper>
-  </div>
+  </HeadBlock>
 );
 
 export default Header;

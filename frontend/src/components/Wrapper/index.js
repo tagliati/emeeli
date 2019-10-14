@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './styles.scss';
+import WrapperBlock from './styles';
 
 const Wrapper = ({ children, customClass }) => (
-  <div className={`wrapper ${customClass || ''}`}>{children}</div>
+  <WrapperBlock className={`wrapper ${customClass || ''}`}>
+    {children}
+  </WrapperBlock>
 );
 
 Wrapper.defaultProps = {

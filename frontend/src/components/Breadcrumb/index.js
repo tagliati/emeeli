@@ -1,13 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './styles.scss';
+import Bread from './styles';
 
-const Breadcrumb = ({ categories }) =>  (
-  <div className="breadcrumb">
-    {categories}
-  </div>
-);
-
+const Breadcrumb = ({ categories }) => <Bread>{categories}</Bread>;
 
 Breadcrumb.defaultProps = {
   categories: {},
