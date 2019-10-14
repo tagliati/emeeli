@@ -1,6 +1,6 @@
-import { Router } from 'express'
-import SearchItemController from './app/controller/SearchItemController'
-import ItemController from './app/controller/ItemController'
+import { Router } from 'express';
+import SearchItemController from './app/controller/SearchItemController';
+import ItemController from './app/controller/ItemController';
 
 const routes = Router()
 
