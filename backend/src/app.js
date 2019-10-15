@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import routes from './routes';
-// import errorHandler from './errorHandler';
+import errorHandler from './errorHandler';
 
 class App {
   constructor () {
@@ -21,11 +21,7 @@ class App {
   }
 
   errorHandler () {
-    this.express.use(function (err, req, res, next) {
-      console.log('eita nois')
-      console.log(err.stack)
-      res.status(500).send({ Error: err.stack })
-    })
+    this.express.use(errorHandler)
   }
 }
 

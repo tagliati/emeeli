@@ -18,7 +18,7 @@ class ItemService {
         categoriesResult: categories.data
       }
     } catch (err) {
-      throw new Error(err.response.data.message)
+      throw new Error(JSON.stringify(err.response.data))
     }
   }
 
@@ -32,14 +32,10 @@ class ItemService {
   }
 
   async getItem (param) {
-    try {
-      const item = await this.fetchData(param)
-      const updatedItems = this.preparePayload(item)
+    const item = await this.fetchData(param)
+    const updatedItems = this.preparePayload(item)
 
-      return updatedItems
-    } catch (err) {
-      throw new Error(err)
-    }
+    return updatedItems
   }
 }
 

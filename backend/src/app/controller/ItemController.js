@@ -8,7 +8,6 @@ class ItemController {
       const data = await itemService.getItem(itemId)
       return res.send(data)
     } catch (err) {
-      console.warn('b emaqui', err)
       next(err)
     }
   }

@@ -1,5 +1,5 @@
-import api from '../services/api'
-import { mapCategoriesSearch, mapItemsSearch } from '../mappers/searchItem'
+import api from '../services/api';
+import { mapCategoriesSearch, mapItemsSearch } from '../mappers/searchItem';
 
 class SearchItemService {
   async fetchData (param) {
@@ -8,7 +8,7 @@ class SearchItemService {
       const currencies = await api.get('currencies/')
       return { searchResult: response.data, currenciesResult: currencies.data }
     } catch (err) {
-      console.warn('Error on call SearchItemService.fetchData')
+      throw new Error(JSON.stringify(err.response.data))
     }
   }
 
