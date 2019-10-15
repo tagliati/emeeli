@@ -7,6 +7,7 @@ import Wrapper from '../../components/Wrapper';
 import Card from '../../components/Card';
 import Breadcrumb from '../../components/Breadcrumb';
 import Loading from '../../components/Loading';
+import Notifications from '../../components/Notifications';
 
 import SearchList from './styles';
 
@@ -38,7 +39,11 @@ const Search = props => {
   const renderLoading = () => <Loading />;
 
   if (Object.keys(error).length) {
-    return <Wrapper>{error.message}</Wrapper>;
+    return <Notifications>{error.message}</Notifications>;
+  }
+
+  if (Object.keys(data).length && data.items.length === 0) {
+    return <Notifications>Nenhum produto encontrado</Notifications>;
   }
 
   return (

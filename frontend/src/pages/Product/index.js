@@ -6,6 +6,7 @@ import Wrapper from '../../components/Wrapper';
 import ProductDetail from '../../components/ProductDetail';
 import Breadcrumb from '../../components/Breadcrumb';
 import Loading from '../../components/Loading';
+import Notifications from '../../components/Notifications';
 
 const Product = props => {
   const [product, setProduct] = useState({});
@@ -39,7 +40,7 @@ const Product = props => {
   const renderEmpty = () => <Loading />;
 
   if (Object.keys(error).length) {
-    return <Wrapper>{error.message}</Wrapper>;
+    return <Notifications>{error.message}</Notifications>;
   }
 
   return (
