@@ -5,7 +5,7 @@ const HeadBlock = styled.header`
   padding: 10px 0;
   background-color: #ffe600;
 
-  &-align {
+  .header-align {
     display: flex;
     align-items: center;
   }
@@ -15,7 +15,7 @@ const HeadBlock = styled.header`
     flex-grow: 1;
     background-image: url(${logo});
     height: 36px;
-    width: 53px;
+    width: 57px;
     display: flex;
     text-indent: 100%;
     white-space: nowrap;

@@ -19,11 +19,8 @@
   },
   "jest": {
     "testMatch": [
-      "**/__tests__/**/*.test.js"
-    ],
-    "moduleNameMapper": {
-      "^~/(.*)": "<rootDir>/src/$1"
-    }
+      "./__tests__/**/*.test.js"
+    ]
   },
   "browserslist": {
     "production": [
