@@ -1,8 +1,11 @@
 import React from 'react';
 import NotificationsBlock from './styles';
 
-const Loading = ({ children }) => (
-  <NotificationsBlock className="loading">{children}</NotificationsBlock>
+const Notifications = ({ children }) => (
+  <NotificationsBlock className="loading">
+    {children}
+    <a href="/">Ir para página principal</a>
+  </NotificationsBlock>
 );
 
-export default NotificationsBlock;
+export default Notifications;
