@@ -1,4 +1,8 @@
-.search {
+import styled from 'styled-components';
+import searchIcon from '../../../assets/img/ic_Search.png';
+import searchIcon2x from '../../../assets/img/ic_Search@2x.png.png';
+
+const SearchBlock = styled.form`
   flex-basis: 100%;
   background-color: #fff;
   border-radius: 3px;
@@ -15,7 +19,7 @@
   }
 
   .button {
-    width:35px;
+    width: 35px;
     height: 100%;
     display: inline-block;
     border: none;
@@ -26,10 +30,12 @@
     background-repeat: no-repeat;
     background-color: #eee;
     background-position: center;
-    background-image: url('../../../assets/img/ic_Search.png');
+    background-image: url(${searchIcon});
 
     @media (-webkit-min-device-pixel-ratio: 2) {
-      background-image: url('../../../assets/img/ic_Search@2x.png.png');
+      background-image: url(${searchIcon2x});
     }
   }
-}
+`;
+
+export default SearchBlock;

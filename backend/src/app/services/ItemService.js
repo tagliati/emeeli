@@ -1,5 +1,5 @@
-import api from '../services/api'
-import { mapCategories, mapItem } from '../mappers/item'
+import api from '../services/api';
+import { mapCategories, mapItem } from '../mappers/item';
 
 class ItemService {
   async fetchData (id) {
@@ -7,7 +7,9 @@ class ItemService {
       const response = await api.get(`items/${id}`)
       const responseDesc = await api.get(`items/${id}/description`)
       const currencies = await api.get('currencies/')
-      const categories = await api.get(`categories/${response.data.category_id}`)
+      const categories = await api.get(
+        `categories/${response.data.category_id}`
+      )
 
       return {
         itemResult: response.data,
@@ -16,7 +18,7 @@ class ItemService {
         categoriesResult: categories.data
       }
     } catch (err) {
-      console.warn('Error on call ItemService.fetchData')
+      throw new Error(JSON.stringify(err.response.data))
     }
   }
 

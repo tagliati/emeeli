@@ -1,6 +1,7 @@
-import express from 'express'
-import cors from 'cors'
-import routes from './routes'
+import express from 'express';
+import cors from 'cors';
+import routes from './routes';
+import errorHandler from './errorHandler';
 
 class App {
   constructor () {
@@ -8,6 +9,7 @@ class App {
 
     this.middlewares()
     this.routes()
+    this.errorHandler()
   }
 
   middlewares () {
@@ -16,6 +18,10 @@ class App {
 
   routes () {
     this.express.use(routes)
+  }
+
+  errorHandler () {
+    this.express.use(errorHandler)
   }
 }
 

@@ -1,18 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './styles.scss';
-
 import { Link } from 'react-router-dom';
+import ProductCard from './styles';
 
 const Card = ({ product }) => {
-  const {
-    id, picture, price, title, free_shipping, location
-  } = product;
+  const { id, picture, price, title, free_shipping, location } = product;
 
   const shippingElement = free_shipping ? 'free-shipping' : 'paid-shipping';
 
   return (
-    <div className="card">
+    <ProductCard className="card">
       <div className="box-image">
         <Link className="image-link" to={`/product/${id}`}>
           <img className="image" src={picture} alt={title} />
@@ -28,7 +25,7 @@ const Card = ({ product }) => {
         </Link>
       </div>
       <div className="location">{location}</div>
-    </div>
+    </ProductCard>
   );
 };
 

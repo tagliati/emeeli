@@ -1,11 +1,9 @@
-.search-list {
-  background-color: #fff;
-  border-radius: 4px;
-  padding: 0 16px;
-.card {
+import styled from 'styled-components';
+
+const ProductCard = styled.div`
   padding: 16px 0;
   display: flex;
-  border-bottom: solid 1px #EEEEEE;
+  border-bottom: solid 1px #eeeeee;
 
   .image {
     display: inherit;
@@ -28,7 +26,7 @@
       margin-bottom: 12px;
     }
     .paid-shipping {
-      display: none
+      display: none;
     }
     .free-shipping {
       width: 18px;
@@ -58,5 +56,5 @@
     margin-top: 37px;
     padding-left: 20px;
   }
-}
-}
+`;
+export default ProductCard;

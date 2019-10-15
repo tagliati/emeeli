@@ -10,9 +10,11 @@ export const mapItem = (item, desc, currencies) => ({
 })
 
 export const mapCategories = categories => {
-  const categoriesTitles = categories.path_from_root.map(category => category.name)
+  const categoriesTitles = categories.path_from_root.map(
+    category => category.name
+  )
   return categoriesTitles
-}
+};
 
 export const mapCurrency = (item, currencies) => {
   const currency = currencies.find(filter => filter.id === item.currency_id)
@@ -21,4 +23,4 @@ export const mapCurrency = (item, currencies) => {
     amount: item.price,
     decimals: currency.decimal_places
   }
-}
+};
