@@ -12,14 +12,15 @@ You’ll need to have Node 8.10.0 or later on your environment.
 
 On backend dir run:
 
-> $ npm install
-> $ npm start
+> $ yarn
+
+> $ yarn start
 
 After that the API will be running at http://localhost:3001
 On frontend dir run:
 
-> $ npm install
-> $ npm start
+> $ yarn
+> $ yarn start
 
 After the npm start you have a server running at http://localhost:3000
 
@@ -35,11 +36,9 @@ To run the backend tests execute:
 - frontend has no tests
 - use redux
 - tests beyond happy path
-- convert loading into component
 - images lazy load
 - product page: last element from breadcrumb should be bold
-- Search result empty page
 - Add something at Home
 - Add better loading option
-- change then to async away in api calls
 - Middleware on node to add info
+- improve notifications
