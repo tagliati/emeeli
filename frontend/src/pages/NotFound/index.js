@@ -1,11 +1,10 @@
 import React from 'react';
-import NotFoundBlock from './styles';
+import Notifications from '../../components/Notifications';
 
 const NotFound = () => (
-  <NotFoundBlock>
+  <Notifications>
     <h4>Página não encontrada</h4>
-    <a href="/">Ir para página principal</a>
-  </NotFoundBlock>
+  </Notifications>
 );
 
 export default NotFound;
