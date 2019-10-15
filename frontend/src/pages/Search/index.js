@@ -15,9 +15,12 @@ const Search = props => {
 
   useEffect(() => {
     const search = props.location.search.split('=')[1];
-    api.get(`/items?search=${search}`).then(result => {
+
+    async function fetchData() {
+      const result = await api.get(`/items?search=${search}`);
       setData(result.data);
-    });
+    }
+    fetchData();
   }, [props.location.search]);
 
   function renderBreadcrumb(categories) {

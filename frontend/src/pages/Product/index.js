@@ -12,16 +12,15 @@ const Product = props => {
 
   useEffect(() => {
     const { id } = props.match.params;
-
-    api
-      .get(`/items/${id}`)
-      .then(result => {
-        setProduct(result.data);
-      })
-      .catch(() => {
-        props.history.push('/');
-      });
-  }, []);
+    async function fetchData() {
+      const result = await api.get(`/items/${id}`);
+      console.log(result);
+      setProduct(result.data);
+    }
+    fetchData();
+    // pq preciso disso no catch?
+    // props.history.push('/');
+  }, [props.match.params]);
 
   function renderProductDetail(productDetail) {
     return <ProductDetail product={productDetail} />;
