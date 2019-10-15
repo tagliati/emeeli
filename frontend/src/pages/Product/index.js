@@ -9,13 +9,18 @@ import Loading from '../../components/Loading';
 
 const Product = props => {
   const [product, setProduct] = useState({});
+  const [error, setError] = useState({});
 
   useEffect(() => {
     const { id } = props.match.params;
     async function fetchData() {
-      const result = await api.get(`/items/${id}`);
-      console.log(result);
-      setProduct(result.data);
+      try {
+        const result = await api.get(`/items/${id}`);
+        console.log(result);
+        setProduct(result.data);
+      } catch (err) {
+        setError(err);
+      }
     }
     fetchData();
     // pq preciso disso no catch?
@@ -30,7 +35,13 @@ const Product = props => {
     const textProduct = productDetail.categories.map(cat => cat).join(' > ');
     return <Breadcrumb categories={textProduct} />;
   }
+
   const renderEmpty = () => <Loading />;
+
+  if (Object.keys(error).length) {
+    return <Wrapper>{error.message}</Wrapper>;
+  }
+
   return (
     <Wrapper>
       {Object.keys(product).length ? renderProductBreadcrumb(product) : ''}

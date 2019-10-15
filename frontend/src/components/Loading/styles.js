@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 
 const LoadingBlock = styled.div`
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
   .lds-roller {
     display: inline-block;
     position: relative;

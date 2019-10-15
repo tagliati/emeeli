@@ -12,14 +12,20 @@ import SearchList from './styles';
 
 const Search = props => {
   const [data, setData] = useState([]);
+  const [error, setError] = useState({});
 
   useEffect(() => {
     const search = props.location.search.split('=')[1];
 
     async function fetchData() {
-      const result = await api.get(`/items?search=${search}`);
-      setData(result.data);
+      try {
+        const result = await api.get(`/items?search=${search}`);
+        setData(result.data);
+      } catch (err) {
+        setError(err);
+      }
     }
+
     fetchData();
   }, [props.location.search]);
 
@@ -30,6 +36,10 @@ const Search = props => {
   }
 
   const renderLoading = () => <Loading />;
+
+  if (Object.keys(error).length) {
+    return <Wrapper>{error.message}</Wrapper>;
+  }
 
   return (
     <Wrapper>
