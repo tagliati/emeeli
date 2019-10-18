@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Wrapper from '../../components/Wrapper';
+import Notifications from '../../components/Notifications';
 
-const Home = () => <Wrapper> Home </Wrapper>;
+const Home = () => <Notifications> Home </Notifications>;
 
 export default Home;
