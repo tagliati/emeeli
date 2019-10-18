@@ -5,12 +5,12 @@ class ItemService {
   async fetchData (id) {
     try {
       const response = await api.get(`items/${id}`)
-      const responseDesc = await api.get(`items/${id}/description`)
-      const currencies = await api.get('currencies/')
-      const categories = await api.get(
-        `categories/${response.data.category_id}`
-      )
 
+      const [responseDesc, currencies, categories] = await Promise.all([
+        api.get(`items/${id}/description`),
+        api.get('currencies/'),
+        api.get(`categories/${response.data.category_id}`)
+      ])
       return {
         itemResult: response.data,
         descResult: responseDesc.data,
